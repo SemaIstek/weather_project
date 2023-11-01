@@ -1,5 +1,5 @@
 const url = "https://api.openweathermap.org/data/2.5/";
-const key = "6fe958e6243b2dafe94f753032dd1e70";
+const key = "f50811e55434ef4a22c29fe5c5f97f08";
 const getValue = () => {
   const cityName = document.getElementById("searchBar").value;
   return getResult(cityName);
