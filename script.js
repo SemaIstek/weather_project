@@ -24,4 +24,4 @@ const displayResult = (result) => {
     average.innerText = `${Math.round(result.main.temp_min)}°C / ${Math.round(
       result.main.temp_max
     )}°C`;
-  };
+    };
