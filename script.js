@@ -12,3 +12,16 @@ const getResult = (cityName) => {
     })
     .then(displayResult);
 };
+
+const displayResult = (result) => {
+    let city = document.querySelector(".city");
+    city.innerText = `${result.name}, ${result.sys.country}`;
+    let temp = document.querySelector(".temp");
+    temp.innerText = `${Math.round(result.main.temp)}°C`;
+    let status = document.querySelector(".status");
+    status.innerText = result.weather[0].description;
+    let average = document.querySelector(".average");
+    average.innerText = `${Math.round(result.main.temp_min)}°C / ${Math.round(
+      result.main.temp_max
+    )}°C`;
+  };
